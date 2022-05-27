@@ -1,0 +1,6 @@
+Event{user='Mary', url='./home', timestamp=1000}
+Event{user='Bob', url='./cart', timestamp=2000}
+Event{user='Bob', url='./cart', timestamp=3000}
+Event{user='Bob', url='./cart', timestamp=3000}
+Event{user='Bob', url='./cart', timestamp=3000}
+Event{user='Bob', url='./cart', timestamp=3000}
