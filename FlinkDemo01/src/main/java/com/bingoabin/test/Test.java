@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  */
 public class Test {
 	public static void main(String[] args) {
-		List<String> list = Arrays.asList("xubin", "zhangsan", "lisi");
+		List<String> list = Arrays.asList("wangwu", "zhangsan", "lisi");
 		List<String> res = list.stream()
 		                       .filter(e -> e.contains("n"))
 		                       .filter(e -> e.length() > 2)
