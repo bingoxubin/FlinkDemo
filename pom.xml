@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>FlinkDemo01</module>
+        <module>FlinkDemo02</module>
     </modules>
 
     <properties>
