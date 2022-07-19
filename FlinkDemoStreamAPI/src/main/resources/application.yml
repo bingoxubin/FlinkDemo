@@ -1,0 +1,36 @@
+kafka.source:
+  bootstrap.servers: hadoop162:9092,hadoop163:9092,hadoop164:9092
+  topic: s1
+  group.id: atguigu
+  auto.offset.reset: latest
+
+#多个topic
+#kafka.source:
+#  bootstrap.servers: hadoop162:9092,hadoop163:9092,hadoop164:9092
+#  # 定义可能需要消费到的topic
+#  topic: s1,s2,s3
+#  group.id: atguigu
+#  auto.offset.reset: latest
+
+#多个kafka集群
+#kafka.source:
+#  kafka1:
+#    # 配置第一个Kafka集群
+#    bootstrap.servers: hadoop162:9092,hadoop163:9092,hadoop164:9092
+#    topic: s1
+#    group.id: atguigu1
+#    auto.offset.reset: latest
+#    enable.auto.commit: true
+#  kafka2:
+#    # 配置第二个kafka集群
+#    bootstrap.servers: hadoop162:9092,hadoop163:9092,hadoop164:9092
+#    topic: s2
+#    group.id: atguigu2
+#    auto.offset.reset: latest
+#    enable.auto.commit: true
+
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  jdbcUrl: jdbc:mysql://hadoop162:3306/test?useSSL=false&allowPublicKeyRetrieval=true
+  username: root
+  password: aaaaaa
