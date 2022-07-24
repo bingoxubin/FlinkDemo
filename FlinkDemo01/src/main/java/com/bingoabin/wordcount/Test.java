@@ -1,4 +1,4 @@
-package com.bingoabin.test;
+package com.bingoabin.wordcount;
 
 import java.util.Arrays;
 import java.util.List;

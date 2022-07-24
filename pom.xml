@@ -12,7 +12,6 @@
         <module>FlinkDemo01</module>
         <module>FlinkDemo02</module>
         <module>FlinkDemoStreamX</module>
-        <module>FlinkDemoStreamAPI</module>
     </modules>
 
     <properties>

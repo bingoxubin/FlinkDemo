@@ -1,0 +1,23 @@
+first: |
+  create table s1 (
+      id string,
+      ts bigint,
+      vc int
+  ) with(
+      'connector' = 'kafka',
+      'topic' = 'bingo',
+      'properties.bootstrap.servers' = 'node01:9092,node02:9092,node03:9092',
+      'properties.group.id' = 'bingo',
+      'scan.startup.mode' = 'latest-offset',
+      'format' = 'csv'
+  );
+
+  create table s2 (
+      id string,
+      ts bigint,
+      vc int
+  ) with(
+      'connector' = 'print'
+  );
+
+  insert into  s2 select * from s1;
